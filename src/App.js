@@ -3,6 +3,7 @@ import "./assets/css/global.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import Nav from "./components/Header/Nav/Nav";
 import Menu from "./components/Header/Menu/Menu";
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <Router className="container">
       <Switch>
 
-        <Route>
-          <Menu exact path="/" />
+        <Route exact path="/">
+          <Nav />
+          <Menu />
         </Route>
 
       </Switch>

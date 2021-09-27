@@ -1,0 +1,35 @@
+.nav {
+   background-color: black;
+   min-height: 35px;
+   width: 20%;
+}
+.nav__itens{
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.nav__item{
+   align-items: center;
+   display: flex;
+   flex-grow: 1;
+   justify-content: flex-start;
+}
+
+.nav__item--fim {
+   justify-content: flex-end;
+}
+
+.nav__item__button {
+   background-color: transparent;
+   border: none;
+   display: flex;
+   justify-content: flex-start;
+   cursor: pointer;
+   padding: 0;
+}
+
+.nav__item__logo {
+   justify-self: right;
+}
