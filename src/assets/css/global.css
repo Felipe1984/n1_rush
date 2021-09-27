@@ -4,4 +4,14 @@
    --azul-escuro: #084154;
    --azul-claro: #3EC6E0;
    --prata: #EBEBEB;
+   --branco: #FFF;
+   width: 100vh
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+.container {
+   width: 100vw;
 }
