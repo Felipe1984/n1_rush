@@ -3,8 +3,7 @@ import "./assets/css/global.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Nav from "./components/Header/Nav/Nav";
-import Menu from "./components/Header/Menu/Menu";
+import Cabecalho from "./components/Cabecalho";
 
 function App() {
   return (
@@ -12,8 +11,7 @@ function App() {
       <Switch>
 
         <Route exact path="/">
-          <Nav />
-          <Menu />
+          <Cabecalho />
         </Route>
 
       </Switch>
