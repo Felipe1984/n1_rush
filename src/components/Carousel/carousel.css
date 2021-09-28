@@ -1,0 +1,26 @@
+.carousel {
+   /* align-items: flex-end; */
+   box-sizing: border-box;
+   display: block;
+   /* flex-direction: column; */
+   width: 100%;
+}
+
+.carousel__slider {
+   align-items: center;
+   background-color: black;
+   box-sizing: border-box;
+   color: var(--branco);
+   display: flex;
+   margin: 0;
+   outline: none;
+   overflow-x: auto;
+   overflow-y: hidden;
+   padding: 0;
+   scroll-behavior: smooth;
+   width: 100%;
+}
+
+.carousel__slider::-webkit-scrollbar {
+   display: none;
+}

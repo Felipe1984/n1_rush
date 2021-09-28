@@ -5,14 +5,15 @@
    --azul-claro: #3EC6E0;
    --prata: #EBEBEB;
    --branco: #FFF;
-   width: 100vh
 }
 
 body {
    font-family: 'Roboto', sans-serif;
-   position: relative;
 }
 
-.container {
+#root {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
    width: 100vw;
 }

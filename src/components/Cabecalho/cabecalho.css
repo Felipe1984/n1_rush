@@ -5,11 +5,12 @@
    display: flex;
    justify-content: center;
    width: 100vw;
+   z-index: 2;
 }
 
 .cabecalho__conteudo {
    align-items: center;
-   background-color: black;
+   background-color: transparent;
    display: flex;
    justify-content: space-between;
    flex-grow: 1;
