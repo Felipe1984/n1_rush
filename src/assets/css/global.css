@@ -12,8 +12,16 @@ body {
 }
 
 #root {
-   display: flex;
+   display: block;
    flex-direction: column;
+   height: 100%;
    margin: 0;
+   width: 100vw;
+}
+
+.container {
+   box-sizing: border-box;
+   height: 100%;
+   outline: none;
    width: 100vw;
 }

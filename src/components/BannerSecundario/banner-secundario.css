@@ -1,0 +1,66 @@
+.banner-secundario {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   top: 82vh;
+   height: 100%;
+   width: 100%;
+}
+
+.banner-secundario__imagens {
+   display: flex;
+   justify-content: space-around;
+   width: 60vw;
+}
+
+.banner-secundario__conteudo {
+   display: flex;
+   justify-content: space-between;
+   width: 80%;
+}
+
+.banner-secundario__imagem {
+   object-fit: cover;
+   height: 41%;
+   width: 98%;
+}
+
+.banner-secundario__descricao{
+   align-items: center;
+   background-color: var(--azul-claro);
+   border-radius: 0 0 5px 5px;
+   display: flex;
+   justify-content: space-between;
+   height: 61px;
+   position: absolute;
+   top: 39vh;
+   width: 29.4vw;
+}
+
+.banner-secundario__borda {
+   background-color: var(--azul-escuro);
+   border-radius: 0 0 0 5px;
+   display: inline-block;
+   height: 61px;
+   width: 11px
+}
+
+.banner-secundario__descicao__texto {
+   color: var(--azul-escuro);
+   display: inline-block;
+   margin: 0 auto 0 1rem;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+.banner-secundario__descicao__linha {
+   justify-self: flex-end;
+   display: inline-block;
+   font-weight: bold;
+   margin: 0 1rem 1rem 0;
+}
+
+.banner-secundario__descicao__linha::after {
+   color: var(--azul-escuro);
+   content: "____________";
+}

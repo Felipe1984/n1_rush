@@ -5,6 +5,7 @@ import "./assets/css/global.css";
 
 import Cabecalho from "./components/Cabecalho";
 import Carousel from "./components/Carousel";
+import BannerSecundario from "./components/BannerSecundario";
 
 function App() {
   return (
@@ -12,8 +13,11 @@ function App() {
       <Switch>
 
         <Route exact path="/">
-          <Cabecalho />
-          <Carousel />
+          <main className="container">
+            <Cabecalho />
+            <Carousel />
+            <BannerSecundario />
+          </main>
         </Route>
 
       </Switch>
