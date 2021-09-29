@@ -4,6 +4,7 @@
    --azul-escuro: #084154;
    --azul-claro: #3EC6E0;
    --prata: #EBEBEB;
+   --cinza: #F5F5F5;
    --branco: #FFF;
 }
 
@@ -14,14 +15,7 @@ body {
 #root {
    display: block;
    flex-direction: column;
-   height: 100%;
+   height: 200vh;
    margin: 0;
-   width: 100vw;
-}
-
-.container {
-   box-sizing: border-box;
-   height: 100%;
-   outline: none;
    width: 100vw;
 }

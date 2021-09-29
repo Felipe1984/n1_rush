@@ -1,0 +1,24 @@
+.produtos-destaque {
+   display: flex;
+   justify-content: center;
+   margin-top: 17rem;
+   width: 100vw;
+}
+
+.produtos-destaque__container {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   width: 67%;
+}
+
+.produtos-destaque__titulo {
+   margin-right: auto;
+}
+
+.produtos-destaque__texto {
+   color: var(--azul-escuro);
+   display: inline-block;
+   font-size: 36px;
+   margin-left: 1rem;
+}
