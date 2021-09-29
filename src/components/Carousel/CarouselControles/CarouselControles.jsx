@@ -8,33 +8,43 @@ import "./carousel-controles.css";
 function CarouselControles({carousel, itens}) {
 
    const [contador, setContador] = useState(1);
+   const [nomeJogo, setNomeJogo] = useState("");
+
+   useEffect(() => {
+      if (itens.length > 0 && contador <= 0)
+         setContador(1);
+      setNomeJogo(itens[contador - 1].card)
+   }, [contador, itens, nomeJogo])
 
    function avancar(e) {
       e.preventDefault();
       carousel.current.scrollLeft += carousel.current.offsetWidth;
-
-      contador < itens && setContador(contador + 1)
+      if (contador < itens.length) {
+         setContador(contador + 1)
+      }
    }
 
    function voltar(e) {
       e.preventDefault();
       carousel.current.scrollLeft -= carousel.current.offsetWidth;
 
-      contador > 1 && setContador(contador - 1)
+      if (contador > 1) {
+         setContador(contador - 1)
+      }
    }
 
    return (
          <div className="carousel-controles">
             <div className="carousel-controles___textos">
                <span className="carousel-controles__texto">
-                  Mortal Kombat
+                  {nomeJogo}
                </span>
                <span className="carousel-controles__texto carousel-controles__texto--ultimo">
                   ___________
                </span>
             </div>
             <div className="carousel-controles__componentes">
-               <div className="carousel-controles__posicao">{contador}/{itens}</div>
+               <div className="carousel-controles__posicao">{contador}/{itens.length}</div>
                <div className="carousel-controles__botoes">
                   <button
                      onClick={voltar}

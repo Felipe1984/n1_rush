@@ -3,8 +3,40 @@
    height: 100vh;
    width: 100%;
 }
+
 .carditem__imagem {
+   align-items: center;
+   background: url("../../../assets/img/principal_banner_desktop.png") center / cover;
+   display: flex;
    height: 100%;
-   object-fit: cover;
+   justify-content:  center;
+   position: relative;
    width: 100%;
+}
+
+.carditem__conteudo {
+   text-align: right;
+   margin-left: 30rem;
+   width: 420px;
+}
+
+.carditem__titulo {
+   font-size: 2.7rem;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.carditem__preco {
+   color: var(--azul-claro);
+   display: flex;
+   justify-content: flex-end;
+   font-size: 6rem;
+   font-weight: bold;
+}
+
+.carditem__preco--centavos {
+   display: inline-block;
+   font-variant: small-caps;
+   font-size: 2rem;
+   padding-top: 15px;
 }

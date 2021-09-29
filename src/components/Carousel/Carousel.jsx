@@ -8,19 +8,19 @@ import "./carousel.css";
 function Carousel() {
 
    const carousel = useRef(null);
-   const dadosApi = ["card1", "card2"];
+   const dadosApi = [{card: "mortal kombat 1"}, {card: "mortal kombat armagedom"}];
 
    return(
          <section className="carousel">
             <article className="carousel__slider" ref={carousel}>
                {
-                  dadosApi.map((card, index, arr) =>
-                     <CardItem tamanho={arr.length} />
+                  dadosApi.map((card, index) => 
+                     <CardItem key={index} />
                   )
                }
             </article>
 
-            <CarouselControles carousel={carousel} itens={dadosApi.length} />
+            <CarouselControles carousel={carousel} itens={dadosApi} />
          </section>
    );
 }

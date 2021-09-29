@@ -16,17 +16,12 @@
    justify-content: flex-start;
 }
 
-.nav__item--fim {
-   justify-content: flex-end;
+.nav__item--menu {
+   position: relative;
 }
 
-.nav__item__button {
-   background-color: transparent;
-   border: none;
-   display: flex;
-   justify-content: flex-start;
-   cursor: pointer;
-   padding: 0;
+.nav__item--fim {
+   justify-content: flex-end;
 }
 
 .nav__item__logo {

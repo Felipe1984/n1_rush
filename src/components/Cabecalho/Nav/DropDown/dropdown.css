@@ -1,0 +1,87 @@
+.dropdown {
+   position: relative;
+}
+
+.dropdown__button {
+   background-color: transparent;
+   border: none;
+   display: flex;
+   justify-content: flex-start;
+   cursor: pointer;
+   padding: 0;
+}
+
+.dropdown__menu__container {
+   background-color: transparent;
+   display: none;
+   position: absolute;
+   left: -30px;
+   z-index: 3;
+}
+
+.dropdown__balao-fake {
+   background-color: var(--azul-claro);
+   left: 30px;
+   position: absolute;
+   top: 12px;
+   transform: rotate(45deg);
+   height: 18.37px;
+   width: 18.37px;
+   z-index: -1;
+}
+
+.dropdown__menu__categorias {
+   background-color: var(--azul-escuro);
+   border-radius: 5px;
+   box-shadow: 15px 15px 0 var(--azul-claro);
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr;
+   margin-top: 20px;
+   height: 249px;
+   width: 565px;
+}
+
+.dropdown__menu__categoria {
+   display: flex;
+   flex-direction: column;
+   padding: 3rem 1rem;
+}
+
+.dropdown__menu__categoria--luta {
+   grid-column: 1 / 1;
+}
+
+.dropdown__menu__categoria--acao-aventura { 
+   grid-column: 2 / 2;
+}
+
+.dropdown__menu__categoria--corrida {
+   grid-column: 3 / 3;
+}
+
+.dropdown__menu__categoria__item {
+   border-radius: 5px;
+   color: var(--branco);
+   cursor: pointer;
+   font-size: 14px;
+   text-transform: capitalize;
+   padding: 0.5rem 1rem;
+}
+
+.dropdown__menu__categoria__item:hover {
+   background-color: var(--azul-claro);
+}
+
+.dropdown__menu__categoria__item--titulo {
+   cursor: auto;
+   font-weight: 700;
+}
+
+.dropdown__menu__categoria__item--titulo:hover{
+   background-color: transparent;
+}
+
+.dropdown-click {
+   display: block;
+}
