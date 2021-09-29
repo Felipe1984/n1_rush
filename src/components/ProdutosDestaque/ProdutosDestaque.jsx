@@ -6,7 +6,7 @@ import "./produtos-destaque.css";
 
 import IconeDestaques from "../../assets/img/icones/produtos.svg"
 
-function ProdutosDestaque() {
+function ProdutosDestaque({setCarrinho, carrinho}) {
    return(
       <section className="produtos-destaque">
          <article className="produtos-destaque__container">
@@ -14,7 +14,7 @@ function ProdutosDestaque() {
                <img src={IconeDestaques} alt="Produtos em destaques" />
                <span className="produtos-destaque__texto">Produtos em destaque</span>
             </h1>
-            <ProdutosSlide />
+            <ProdutosSlide setCarrinho={setCarrinho} carrinho={carrinho} />
          </article>
       </section>
    )

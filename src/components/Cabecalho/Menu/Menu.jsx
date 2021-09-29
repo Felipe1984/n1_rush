@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 
 import ContatoImg from "../../../assets/img/icones/contato.svg";
@@ -8,7 +7,8 @@ import SacolaImg from "../../../assets/img/icones/sacola-de-compras.svg"
 
 import "./menu.css";
 
-function Menu () {
+function Menu ({carrinho}) {
+
    return (
          <ul className="menu">
             <Link to="#" className="menu__link">
@@ -38,7 +38,7 @@ function Menu () {
                      className="menu__item__imagem"
                      alt="Sacola de compras"
                   />
-                  <div className="menu__item__contador">2</div>
+                  <div className="menu__item__contador">{carrinho}</div>
                </li>
             </Link>
          </ul>

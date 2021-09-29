@@ -1,0 +1,22 @@
+.rodape {
+   background-color: var(--azul-claro);
+   display: flex;
+   height: 50px;
+   width: 100%;
+}
+
+.rodape__logo {
+   align-items: center;
+   display: flex;
+   background-color: var(--azul-escuro);
+   justify-content: flex-end;
+   padding-right: 3rem;
+   width: 30%;
+}
+
+.rodape__direitos-autorais {
+   align-items: center;
+   color: var(--branco);
+   display: flex;
+   margin-left: 3rem;
+}

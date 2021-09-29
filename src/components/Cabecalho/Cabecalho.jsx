@@ -5,12 +5,12 @@ import Menu from "./Menu";
 
 import "./cabecalho.css";
 
-function Cabecalho() {
+function Cabecalho({carrinho}) {
    return (
       <header className="cabecalho">
          <div className="cabecalho__conteudo">
             <Nav />
-            <Menu />
+            <Menu carrinho={carrinho} />
          </div>
       </header>
    );
